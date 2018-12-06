@@ -1,4 +1,4 @@
-package com.leafchild0.jms;
+package com.leafchild0;
 
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.button.Button;
@@ -16,7 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author victor
  * @date 10/25/18
  */
-@Route(value = "")
+@Route
 @HtmlImport("frontend://styles/shared-styles.html")
 @PageTitle("Main Layout")
 @Tag("main-layout")

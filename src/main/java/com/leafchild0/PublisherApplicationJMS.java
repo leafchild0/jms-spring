@@ -1,4 +1,4 @@
-package com.leafchild0.jms;
+package com.leafchild0;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Bean;
  * @date 10/23/18
  */
 @SpringBootApplication
-public class PublisherApplication {
+public class PublisherApplicationJMS {
 
 	static final String TOPIC_EXCHANGE_NAME = "spring-exchange";
 	private static final String QUEUE_NAME = "spring-jms";
@@ -50,7 +50,7 @@ public class PublisherApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(PublisherApplication.class, args);
+		SpringApplication.run(PublisherApplicationJMS.class, args);
 	}
 
 }

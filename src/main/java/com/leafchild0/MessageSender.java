@@ -1,4 +1,4 @@
-package com.leafchild0.jms;
+package com.leafchild0;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @date 10/23/18
  */
 @Component
-public class MessageSender {
+public class MessageSender  {
 
 	private final RabbitTemplate rabbitTemplate;
 
@@ -18,7 +18,7 @@ public class MessageSender {
 
 	void sendMessage(String message) {
 
-		rabbitTemplate.convertAndSend(PublisherApplication.TOPIC_EXCHANGE_NAME, "com.leafchild0.message", message);
+		rabbitTemplate.convertAndSend(PublisherApplicationJMS.TOPIC_EXCHANGE_NAME, "com.leafchild0.message", message);
 	}
 
 }
