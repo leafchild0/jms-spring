@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration
  */
 
 @Configuration
-class RabbitConfiguration {
+class RabbitConfigurationWEB {
 	@Bean
 	internal fun queue(): Queue {
 

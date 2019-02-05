@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component
 
 @Component
 @EnableJpaRepositories
-class RabbitConfigutation {
+class RabbitConfigurationDB {
 	@Bean
 	internal fun queue(): Queue {
 
