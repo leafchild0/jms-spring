@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JMSConfiguration {
 
-	private static final String TOPIC_EXCHANGE_NAME = "spring-exchange";
+	public static final String TOPIC_EXCHANGE_NAME = "spring-exchange";
 	private static final String QUEUE_NAME = "spring-jms";
 
 	@Bean

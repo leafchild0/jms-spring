@@ -18,7 +18,7 @@ public class MessageSender  {
 
 	void sendMessage(String message) {
 
-		rabbitTemplate.convertAndSend(PublisherApplicationJMS.TOPIC_EXCHANGE_NAME, "com.leafchild0.message", message);
+		rabbitTemplate.convertAndSend(JMSConfiguration.TOPIC_EXCHANGE_NAME, "com.leafchild0.message", message);
 	}
 
 }
